@@ -7,23 +7,32 @@
     <title>DOMINION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="icon" href="/images/logo_thumbnail.png" />
 </head>
 <body>
     <header id="header">   
       <div class="section_container">
         <nav>
-          <ul>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">EXPLORE</a></li>
-              <li><img id="logo_thumbnail" src="/images/logo_thumbnail.png" alt=""></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#">PURPOSE</a></li>
-              <li><a href="#">BOOK</a></li>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+              <li><a class="transition" href="#about">ABOUT</a></li>
+              <li><a class="transition"  href="#explore_bx">SERVICES</a></li>
+              <li><a class="transition"  href="team.html">TEAM</a></li>
+              <li><img  id="logo_thumbnail" src="/images/logo_thumbnail.png" alt=""></li>
+              <li><a class="transition"  class="transition"  href="#contact">CONTACT</a></li>
+              <li><a class="transition"  href="#purpose">PURPOSE</a></li>
+              <li><a class="transition"  href="book.html">BOOK</a></li>
+              <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="menu-icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
           </ul>
-      </nav>
+        </nav>
+      </div>  
       <section class="animae">
         <div class="animae_container">
           <h2>dominion circus uganda</h2>
@@ -39,7 +48,7 @@
     </header>
 
 
-    <div class="explore_bx">
+    <div id="explore_bx" class="explore_bx">
         <h2>SERVICES</h2>
         <p>we offer Entertainment services for parties, events and weddings, co-operate events, advertisements, outreaches with organizations and awareness programs in schools and communities.</p>
         <div class="explore_cards">
@@ -85,7 +94,7 @@
     </section>
 
 
-      <section class="purpose">
+      <section id="purpose" class="purpose">
         <div class="purpose_container">
           <div class="purpose_heading">
             <h1 id="main_heading">PURPOSE</h1>
@@ -251,14 +260,14 @@
       </div>
 
     
-    <section class="form_wrapper">
+    <section id="contact" class="form_wrapper">
             <h1>contact us</h1>
         <div class="form_container">
         <div class="form_container_wrapper gap">
         <div class="logo_background margin" id="logo_blur">
           <div class="logo_background_wrapper">
             <div class="loggo">
-            <img src="/images/video/Clown - 27683.mp4" alt="">
+            <img width="700px" src="/images/video/Clown - 27683.mp4" alt="">
             </div>
           </div>
         </div>
@@ -278,7 +287,7 @@
     </section>
 
 
-    <iframe title="goggle" id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7627889729215!2d32.61711481543778!3d0.3022948641277448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd80c639c077%3A0x720735a6ec41f893!2sTOUCH%20THE%20SLUM%20UGANDA!5e0!3m2!1sen!2sug!4v1674226549512!5m2!1sen!2sug"></iframe>
+    <iframe title="goggle"id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7627889729215!2d32.61711481543778!3d0.3022948641277448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd80c639c077%3A0x720735a6ec41f893!2sTOUCH%20THE%20SLUM%20UGANDA!5e0!3m2!1sen!2sug!4v1674226549512!5m2!1sen!2sug"></iframe>
 
 <footer class="footer">
   <div class="container">
@@ -313,9 +322,9 @@
       <div class="footer-col">
         <h4>follow us</h4>
         <div class="social-links">
-          <a aria-label="link" href="#"><i class="fa fa-facebook-f"></i></a>
-          <a aria-label="link" href="#"><i class="fa fa-twitter"></i></a>
-          <a aria-label="link" href="#"><i class="fa fa-instagram"></i></a>
+          <a aria-label="link" href="#"><i class="fab fa-facebook"></i></a>
+          <a aria-label="link" href="#"><i class="fab fa-twitter"></i></a>
+          <a aria-label="link" href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -327,6 +336,7 @@
   </div>
   
 </footer>
+<script src="/index.js"></script>
 
 </body>
 </html>

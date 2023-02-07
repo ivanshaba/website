@@ -26,8 +26,13 @@ header  {
     transition: 1s linear;
   }
 
+
+ 
+  
+  
+
    #logo_thumbnail {
-    width:calc(200px  +  (300 - 10)  *  (100vw  -  320px)  /  (1920  -  320));
+    width:calc(150px  +  (300 - 10)  *  (100vw  -  320px)  /  (1920  -  320));
   } 
 
 ul {
@@ -40,7 +45,7 @@ a {
 
 
  header::before { 
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 50%;
@@ -68,10 +73,154 @@ header nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     z-index: 99999999999;
     top: 0;
 }
+
+
+/* this is fake */
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  color: #fff;
+  background-color: #000;
+} */
+
+
+
+
+
+/* .menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 60px;
+  font-size: 1.2em;
+} */
+
+/* @media (max-width: 992px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none;
+  }
+} */
+
+.openMenu {
+  display: none;
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 761px) {
+  
+      #logo_thumbnail {
+        display: none;
+      }
+
+    nav .mainMenu {
+      position: fixed;
+      inset: 0;
+      height: 100vh;
+      /* z-index: 10; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* background: #000; */
+      transition: top 1s ease;
+      display: none;
+    }
+  
+    header nav {
+      position: relative;
+      width: 100%;
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+      z-index: 99999999999;
+      background-color: rgb(53, 53, 53);
+      color: #fff;
+      height: 60px;
+  }
+
+
+  nav .mainMenu li a:hover {
+    color: #e91e63;
+    font-size: 14px;
+  }
+
+
+
+  nav .openMenu {
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 2em;
+    z-index: 10;
+  }
+
+ nav  .menu-icon {
+    display: flex;
+    margin: 2em;
+  }
+
+  nav .menu-icon i {
+    display: inline-block;
+    margin: 1em;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+  .menu-icon i:hover {
+    color: #e91e63;
+    transition: 0.2s ease-in;
+  }
+
+
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+
+} 
+
+  
+  
+
+
+
+
+/* this is fake */
+
+
+
+/* .section-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
 
 header nav ul{
     list-style: none;
@@ -109,6 +258,11 @@ header nav ul li:nth-child(4) a {
 }
 
 
+
+
+
+
+
 .animae {
   position: absolute;
   width: 100%;
@@ -124,6 +278,7 @@ header nav ul li:nth-child(4) a {
     transform: translateY(150px);
     /* margin-bottom: 900px; */
     overflow: hidden;
+    /* z-index: 10; */
 }
 
 .animae_container {
@@ -308,7 +463,7 @@ header nav ul li:nth-child(4) a {
     margin: 10px 10px 0px 10px;
     transition: 0.3s linear;
     color: #fff;
-}
+  }
 
 .explore_bx .explore_cards .exp_card::before,
 .explore_bx .explore_cards .exp_card::before {
@@ -439,7 +594,7 @@ header nav ul li:nth-child(4) a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25.25%;
+  padding-top: 37.25%;
   height: 0;
 }  
 
@@ -491,7 +646,7 @@ header nav ul li:nth-child(4) a {
   align-items: center;
   justify-content: center; 
   
-  background-color: #8a8a8a2f;
+      background-color: #8a8a8a2f;
 }
 
 
@@ -645,7 +800,7 @@ header nav ul li:nth-child(4) a {
 }
  
 
-  .slide  img{
+  .slide  img {
   width: 350px;
   height: 350px;
   transition: transform 1s ease;
@@ -679,8 +834,8 @@ header nav ul li:nth-child(4) a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 2px solid crimson; 
   background-color: #2d2d2d;
+  padding: 7em 0;
 }
  
 
@@ -702,6 +857,7 @@ header nav ul li:nth-child(4) a {
   color: crimson;
   font-size: 3em;
   text-transform: capitalize;
+  padding-bottom: 1.5em;
 }
 
 
@@ -715,7 +871,6 @@ header nav ul li:nth-child(4) a {
   background-color:#eaf6ff15;
   padding: 1.8em 0;
   border-radius: 7px;
-  border: 2px solid orange;
 
 }
 
@@ -729,7 +884,7 @@ header nav ul li:nth-child(4) a {
 }
 
 .form_container_wrapper {
-  border: 2px solid yellow;width: 100%;
+  max-width: 90%;
   height: 100%;
   display: flex;
   /* flex-direction: column; */
@@ -738,6 +893,17 @@ header nav ul li:nth-child(4) a {
   margin-inline: auto;
 }
 
+.form_container_wrapper .logo {
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1579px) {
+  .gap {
+    margin: 1em;
+  }
+  }
 
 
 
@@ -800,7 +966,7 @@ header nav ul li:nth-child(4) a {
   text-align: center;
   align-items: center;
   justify-content: center;
-  transform: translateY(7em);
+  padding-top: 30px;
 }
 
 
@@ -825,7 +991,7 @@ textarea::-webkit-scrollbar-thumb{
   text-align: center;
   transition: 0.3s ease-in-out;
   flex-wrap: wrap;
-  transform: translateY(8em);
+  /* transform: translateY(8em); */
 }
 
 #form  button:hover {
@@ -868,33 +1034,11 @@ textarea::-webkit-scrollbar-thumb{
   display: flex;
 }
 
-.loggo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-image: url(/images/video/Clown\ -\ 27683.mp4); */
-  background-position: center;
-}
-
-
 .logo_background_wrapper img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 
-
-/* #logo_blur {
-  width: 100%;
-  height: 100%; 
-  inset: 0;
-} */
-
- .gap {
-  margin: 0 2em;
-} 
 
 
  .slider::before,
@@ -1096,18 +1240,50 @@ textarea::-webkit-scrollbar-thumb{
     background-color: #ffffff;
   }
   
-  @media(max-width: 767px){
+  @media screen and (max-width: 767px){
     .footer-col{
       width: 50%;
       margin-bottom: 30px;
   }
   }
-  @media(max-width: 574px){
+  @media screen and (max-width: 574px){
     .footer-col{
       width: 100%;
   }
   }
    
+
+  @media screen and (max-width: 950px){
+    .form_container_wrapper {
+      max-width: 90%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+    }
+
+
+    #form  button{
+      background: transparent;
+      color: #d0d0d0;
+      border: 1px solid white;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+      width: 70px;
+      height: 30px;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+      /* flex-wrap: wrap; */
+      /* transform: translateY(8em); */
+    }
+    
+
+  }
+
   
 
 #footer {
@@ -1150,6 +1326,9 @@ textarea::-webkit-scrollbar-thumb{
 
   header {
     height: 80vh;
+}
+header nav ul li {
+  padding: 15px 40px;
 }
 
 .explore_bx {
@@ -1195,8 +1374,9 @@ textarea::-webkit-scrollbar-thumb{
   font-size: 14px;
   
 }
+
 header {
-  height: 80vh;
+  height: 90vh;
   /* width: 100%; */
 }
 .card_info p{
@@ -1205,6 +1385,8 @@ header {
 }
 
 }
+
+
 
 @media screen  and (max-width: 1373px){
   #form  button{
@@ -1222,6 +1404,10 @@ header {
     flex-wrap: wrap;
     transform: translateY( -1em);
   }
+
+  header nav ul li {
+    padding: 15px 33px;
+}
   
 
   header {
@@ -1317,6 +1503,10 @@ header {
       font-size: 14px;
       
     }
+
+    header nav ul li {
+      padding: 15px 30px;
+  }
    
     
 }
@@ -1361,6 +1551,10 @@ header {
   flex-wrap: wrap;
   font-size: 14px;
   
+}
+
+header nav ul li {
+  padding: 15px 23px;
 }
 
 }
@@ -1408,6 +1602,10 @@ header {
   header{
     height: 80vh;
   }
+
+  header nav ul li {
+    padding: 15px 20px;
+}
  
   #logo_thumbnail {
     width: 150px;
@@ -1421,7 +1619,7 @@ header {
     
    
     header {
-        height: 80vh
+        height: 70vh
     }
     .explore_bx {
         width: 100%;
@@ -1469,6 +1667,11 @@ header {
     #logo_thumbnail {
       width: 150px;
     } 
+
+    header nav ul li {
+      padding: 15px 15px;
+  }
+   
     
    
 }
@@ -1476,7 +1679,7 @@ header {
 @media screen  and (max-width: 766px) {
     
     header {
-        height: 80vh;
+        height: 70vh;
     }
 
     #form  button{
@@ -1517,15 +1720,17 @@ header {
     #logo_thumbnail {
       width: 150px;
     } 
+
     
     
 }
 
 
+
 @media screen  and (max-width: 600px) {
    
     header {
-        height: 80vh;
+        height: 70vh;
     }
 
     .contact__container,
@@ -1533,21 +1738,9 @@ header {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    #form  button{
-      background: transparent;
-      color: #d0d0d0;
-      border: 1px solid white;
-      font-weight: 500;
-      font-size: 20px;
-      cursor: pointer;
-      width: 70px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      transition: 0.3s ease-in-out;
-      flex-wrap: wrap;
-      transform: translateY( -1em);
-    } 
+    
+
+    
   
     #form form textarea{
       position: relative;
@@ -1571,6 +1764,11 @@ header {
     #logo_thumbnail {
       width: 150px;
     } 
+
+
+    header nav ul li {
+      padding: 15px 35px;
+  }
     
     
 }
@@ -1587,22 +1785,7 @@ header {
         font-size: 25px;
     }
 
-    #form  button{
-      background: transparent;
-      color: #d0d0d0;
-      border: 1px solid white;
-      font-weight: 500;
-      font-size: 20px;
-      cursor: pointer;
-      width: 70px;
-      height: 30px;
-      font-size: 14px;
-      text-align: center;
-      transition: 0.3s ease-in-out;
-      flex-wrap: wrap;
-      transform: translateY( -1em);
-    } 
-  
+   
     #form form textarea{
       position: relative;
       display: flex;
@@ -1636,21 +1819,8 @@ header {
     height: 80vh;
 }
 
-#form  button{
-  background: transparent;
-  color: #d0d0d0;
-  border: 1px solid white;
-  font-weight: 500;
-  font-size: 20px;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  font-size: 14px;
-  text-align: center;
-  transition: 0.3s ease-in-out;
-  flex-wrap: wrap;
-  transform: translateY( -1em);
-} 
+
+
 
 #form form textarea{
   position: relative;
@@ -1698,21 +1868,7 @@ header {
       height: 80vh;
   }
 
-  #form  button{
-    background: transparent;
-    color: #d0d0d0;
-    border: 1px solid white;
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
-    width: 70px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    flex-wrap: wrap;
-    transform: translateY( -1em);
-  } 
+ 
 
   #form form textarea{
     position: relative;
@@ -1771,22 +1927,7 @@ header {
       height: 70vh;
   }
 
-   #form  button{
-    background: transparent;
-    color: #d0d0d0;
-    border: 1px solid white;
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
-    width: 70px;
-    height: 30px;
-    font-size: 14px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    flex-wrap: wrap;
-    transform: translateY( -1em);
-  } 
-
+  
   #form form textarea{
     position: relative;
     display: flex;
@@ -1883,7 +2024,6 @@ header {
   } 
   
 } 
-
 
 
 
