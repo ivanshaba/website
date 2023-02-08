@@ -1,13 +1,3 @@
-// const Booking = document.getElementById('.book');
-// const Form = document.querySelector('.form__container');
-// const Close = document.querySelector('.close-btn');
-
-
-
-// Booking.addEventListener('click', function(){
-//     Form.classList.add('form__container__active');
-// });
-
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const openMenu = document.querySelector(".openMenu");
@@ -28,17 +18,12 @@ function close() {
     mainMenu.style.background = "transparent";
     mainMenu.style.transition = "all 1s ease-out";
     mainMenu.style.zIndex = "0";
-    // mainMenu.style.display = "none";
 }
 
 
-// var mysql = require("mysql2");
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   user: "your_username",
-//   password: "your_password",
-//   database: "music_library"
-// });
+
+
+
 
 const express = require("express");
 const bodyParser = require("body-parser");
