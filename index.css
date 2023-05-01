@@ -703,8 +703,13 @@ header nav ul li:nth-child(4) a {
 }
 
 .push {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient:vertical; 
+  text-align: start;
+  margin-left: 20px;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis;
 }
   
 
