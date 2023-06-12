@@ -385,6 +385,7 @@ header nav ul li:nth-child(4) a {
   margin-top: 1em;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  overflow: visible;
 }
 
 .animae button:hover {
@@ -1391,7 +1392,24 @@ header {
 
 }
 
+@media screen  and (max-width: 1500px) {
 
+  header {
+    height: 100vh;
+  }
+  #logo_thumbnail {
+    width: 320px;
+  }
+ 
+}
+
+@media screen  and (max-width: 1400px) {
+
+  header {
+    height: 100vh;
+  }
+ 
+}
 
 @media screen  and (max-width: 1373px){
   #form  button{
@@ -1449,7 +1467,7 @@ header {
 @media screen  and (max-width: 1367px) {
 
   header {
-    height: 80vh;
+    height: 100vh;
   }
  
 }
@@ -1624,7 +1642,7 @@ header nav ul li {
     
    
     header {
-        height: 70vh
+        height: 60vh
     }
     .explore_bx {
         width: 100%;
@@ -1684,7 +1702,7 @@ header nav ul li {
 @media screen  and (max-width: 766px) {
     
     header {
-        height: 70vh;
+        height:60vh;
     }
 
     #form  button{
@@ -1735,7 +1753,7 @@ header nav ul li {
 @media screen  and (max-width: 600px) {
    
     header {
-        height: 70vh;
+        height: 60vh;
     }
 
     .contact__container,
@@ -1777,10 +1795,22 @@ header nav ul li {
     
     
 }
+@media screen  and (max-width: 1439px) {
+  header {
+    height: 100vh;
+  }
+  #logo_thumbnail {
+    width: 270px;
+  } 
+
+}
 
 
 @media screen  and (max-width: 568px) {
     
+  header {
+    height: 60vh;
+  }
     
     header nav ul li {
         padding: 15px 10px;
@@ -1821,7 +1851,7 @@ header nav ul li {
 
 @media screen  and (max-width: 500px) {
   header {
-    height: 80vh;
+    height: 60vh;
 }
 
 
@@ -1866,11 +1896,11 @@ header nav ul li {
     }
 
     header nav {
-      height: 60px;
+      height: 55px;
     }
 
     header {
-      height: 80vh;
+      height: 60vh;
   }
 
  
@@ -1929,7 +1959,7 @@ header nav ul li {
         height: 180px;
     }
     header {
-      height: 70vh;
+      height: 55vh;
   }
 
   
@@ -1968,7 +1998,7 @@ header nav ul li {
       }
 
       header {
-        height: 80vh;
+        height: 55vh;
         width: 100%;
     }
 
@@ -1991,7 +2021,7 @@ header nav ul li {
 
  @media screen  and (max-width: 320px) {
   header {
-    height: 80vh;
+    height: 55vh;
     width: 100%;
   }
 
@@ -2014,7 +2044,7 @@ header nav ul li {
 
  @media screen  and (max-width: 300px) {
   header {
-    height: 70vh;
+    height: 50vh;
   }
 
   .animae  h2{
@@ -2029,9 +2059,6 @@ header nav ul li {
   } 
   
 } 
-
-
-
 
 
 
